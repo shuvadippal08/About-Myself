@@ -105,7 +105,7 @@
 .about-education h3{
     font-size: 20px;
     font-weight: 700;
-    background: linear-gradient(270deg, #04f360 10%, #05e487 80%);
+    background: linear-gradient(270deg, #e9ebea 10%, #868786 80%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -114,7 +114,7 @@
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    background: linear-gradient(270deg, #0468f3 10%, #05e487 80%);
+    background: linear-gradient(270deg, #e2e2e2 10%, #727b77 80%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -123,7 +123,7 @@
 .about-education p{
     font-size: 20px;
     font-weight: 700;
-    background: linear-gradient(270deg, #04abf3 10%, #05e487 80%);
+    background: linear-gradient(270deg, #f7f7f7 10%, #535353 80%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
