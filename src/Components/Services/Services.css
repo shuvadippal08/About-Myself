@@ -1,0 +1,134 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 5vw;
+  background-color: #0f0f0f; /* Optional background */
+}
+
+.services-title {
+  position: relative;
+  text-align: center;
+}
+
+.services-title h1 {
+  font-size: clamp(2rem, 6vw, 4.5rem); /* Responsive font size */
+  font-weight: 600;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.services-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  max-width: 100px;
+  opacity: 0.3; /* Optional for subtle effect */
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.services-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 30px 24px;
+  border-radius: 12px;
+  border: 2px solid white;
+  background-color: #1a1a1a;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.services-format:hover {
+  border-color: #ff00ff;
+  background: linear-gradient(54deg, #3d311f 10%, #025b36 80%);
+  transform: scale(1.03);
+}
+
+.services-format h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.services-format h2 {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #df8908 10%, #05e487 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.services-format p {
+  color: #d4d4d4;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.services-readmore {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #05e487;
+}
+
+@media (max-width: 768px) {
+  .services {
+    gap: 40px;
+    padding: 40px 6vw;
+  }
+
+  .services-format {
+    padding: 24px 18px;
+  }
+
+  .services-format h3 {
+    font-size: 20px;
+  }
+
+  .services-format h2 {
+    font-size: 24px;
+  }
+
+  .services-format p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title h1 {
+    font-size: 32px;
+  }
+
+  .services-format h3 {
+    font-size: 18px;
+  }
+
+  .services-format h2 {
+    font-size: 20px;
+  }
+
+  .services-format p {
+    font-size: 15px;
+  }
+
+  .services-readmore {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
